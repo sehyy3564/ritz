@@ -1,0 +1,125 @@
+@charset "utf-8";
+html, body { 
+       position: relative; 
+       height: 100%; 
+     } 
+#slide{height: 100%; position: relative; margin: 0; 
+       padding: 0;}
+.swiper-container { 
+       width: 100%; 
+       height: 100%; 
+       margin-left: auto; 
+       margin-right: auto; 
+     } 
+.swiper-slide { 
+       text-align: center; 
+       background-size: cover;
+       /* Center slide text vertically */ 
+       display: -webkit-box; 
+       display: -ms-flexbox; 
+       display: -webkit-flex; 
+       display: flex; 
+       -webkit-box-pack: center; 
+       -ms-flex-pack: center; 
+       -webkit-justify-content: center; 
+       justify-content: center; 
+       -webkit-box-align: center; 
+       -ms-flex-align: center; 
+       -webkit-align-items: center; 
+       align-items: center; 
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+     } 
+
+h1.slide_text{
+    color: white;
+    font-size: 68px;
+    font-family: 'NanumSquareEB';
+   
+}
+h2.slide_subtext{
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: 'NanumSquareB';
+    justify-content: center;
+    
+}
+
+.sBtn1{
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 2px solid white;
+    color: white;
+    font-weight: bold;
+	position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 2%;
+    width: 170px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 17px;   
+}
+.sBtn1 a{
+	z-index: 90;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.sBtn1 a:hover {
+    color: white;
+}
+.sBtn1::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	background-color: #213859;
+    -webkit-transition: all 0.45s;
+	-moz-transition: all 0.45s;
+	-o-transition: all 0.45s;
+	transition: all 0.45s;
+
+}
+.sBtn1:hover{
+    border: 2px solid #213859;
+}
+.sBtn1:hover::before{
+	opacity: 1;
+	width: 100%;
+}
+
+
+
+
+.scroll{position: relative;}
+.scroll>p{
+    position: absolute; 
+    bottom: 46px; 
+    color: white; 
+    z-index: 1111; 
+    text-align: center; 
+    width: 100%;
+    font-size: 14px;
+    font-family: 'NanumSquareEB';
+    cursor: pointer;
+}
+p.scroll_line{
+    width: 2px; 
+    height: 30px; 
+    background: white; 
+    position: absolute; 
+    bottom: 0; 
+    z-index: 1111; 
+    text-align: center;
+    left: 50%;
+}
